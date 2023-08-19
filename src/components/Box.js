@@ -11,6 +11,7 @@ export default function Box(params) {
     }
     return(
         <>
+            <h1 className={styles.heading}>Project-Puzzle</h1>
             <div className={styles.Box}>
                 {Pieces}
             </div>
