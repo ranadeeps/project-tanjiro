@@ -1,0 +1,17 @@
+
+.Box{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    border: 1px black solid;
+    position: relative;
+
+}
+.Trans{
+    width: 100px;
+    height: 100px;
+    background-color: burlywood;
+    border: 1px black solid;
+    position: relative;
+
+}
