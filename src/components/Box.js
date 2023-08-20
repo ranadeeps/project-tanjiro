@@ -35,9 +35,9 @@ export default function Box(params) {
             setBlur(ind+3);
             matrix[ind]=1;
             matrix[ind+3]=0;
-            let prev = document.getElementById(ind+3).innerHTML; 
-            document.getElementById(ind+3).innerHTML=document.getElementById(ind).innerHTML;
-            document.getElementById(ind).innerHTML=prev;
+            let prev = document.getElementById(ind+3).getAttribute("src"); 
+            document.getElementById(ind+3).setAttribute("src",document.getElementById(ind).getAttribute("src"));
+            document.getElementById(ind).setAttribute("src",prev)
        }
        console.log(matrix);
     }
@@ -47,9 +47,9 @@ export default function Box(params) {
             setBlur(ind-3);
             matrix[ind]=1;
             matrix[ind-3]=0;
-            let prev = document.getElementById(ind-3).innerHTML; 
-            document.getElementById(ind-3).innerHTML=document.getElementById(ind).innerHTML;
-            document.getElementById(ind).innerHTML=prev;
+            let prev = document.getElementById(ind-3).getAttribute("src"); 
+            document.getElementById(ind-3).setAttribute("src",document.getElementById(ind).getAttribute("src"));
+            document.getElementById(ind).setAttribute("src",prev)
         }
         console.log(matrix);
     }
@@ -59,9 +59,9 @@ export default function Box(params) {
             setBlur(ind+1)
             matrix[ind]=1;
             matrix[ind+1]=0;
-            let prev = document.getElementById(ind+1).innerHTML; 
-            document.getElementById(ind+1).innerHTML=document.getElementById(ind).innerHTML;
-            document.getElementById(ind).innerHTML=prev;
+            let prev = document.getElementById(ind+1).getAttribute("src"); 
+            document.getElementById(ind+1).setAttribute("src",document.getElementById(ind).getAttribute("src"));
+            document.getElementById(ind).setAttribute("src",prev)
         }
         console.log(matrix);
     }
@@ -72,9 +72,9 @@ export default function Box(params) {
             setBlur(ind-1);
             matrix[ind]=1;
             matrix[ind-1]=0;
-            let prev = document.getElementById(ind-1).innerHTML; 
-            document.getElementById(ind-1).innerHTML=document.getElementById(ind).innerHTML;
-            document.getElementById(ind).innerHTML=prev;
+            let prev = document.getElementById(ind-1).getAttribute("src"); 
+            document.getElementById(ind-1).setAttribute("src",document.getElementById(ind).getAttribute("src"));
+            document.getElementById(ind).setAttribute("src",prev)
         }
         console.log(matrix);
     }
