@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import styles from '../styles/Box.module.css'
 import Piece from './Piece';
+import solution from '../images/solution.jpg'
 export default function Box(params) {
     const [matrix,setMatrix] = useState([1,1,1,1,1,1,1,1,0]);
     const [blur,setBlur] = useState(8);
-    console.log(matrix);
     let Pieces=[];
     for (let index = 0; index <= 8; index++) {
         Pieces.push(<Piece key={index} id={index} val={blur} cont={index}></Piece>)   
@@ -12,13 +12,18 @@ export default function Box(params) {
     return(
         <>
             <h1 className={styles.heading}>Project-Puzzle</h1>
-            <div className={styles.Box}>
-                {Pieces}
+            <div className={styles.BigBox}>
+                <div className={styles.Box}>
+                    {Pieces}
+                </div>
+                <div>
+                    <img src={solution.src} width={"300px"} height={"300px"} alt='solution' ></img>
+                </div>
             </div>
             <div className={styles.Margin}></div>
             <div className={styles.ButtonBox}>
                 <div className={styles.Button}></div>
-                <div className={styles.Button}> <button onClick={upf} className={styles.btn}>UP</button>  </div>
+                <div className={styles.Button}> <button onClick={upf} className={styles.btn}>Up</button>  </div>
                 <div className={styles.Button}></div>
                 <div className={styles.Button}><button onClick={leftf} className={styles.btn}>Left</button>  </div>
                 <div className={styles.Button}></div>
