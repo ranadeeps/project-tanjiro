@@ -16,7 +16,7 @@ export default function Box(params) {
                 <div className={styles.Box}>
                     {Pieces}
                 </div>
-                <div>
+                <div className={styles.Image}>
                     <img src={solution.src} width={"300px"} height={"300px"} alt='solution' ></img>
                 </div>
             </div>

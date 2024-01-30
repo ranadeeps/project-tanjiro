@@ -12,7 +12,7 @@ export default function Piece(params) {
     let id = params.id;
     let val = params.val;
     let cont = params.cont;
-    let src=[img_0.src,img_1.src,img_2.src,img_3.src,img_4.src,img_5.src,img_6.src,img_7.src,img_8.src];
+    let src=[img_1.src,img_0.src,img_2.src,img_3.src,img_4.src,img_5.src,img_6.src,img_7.src,img_8.src];
     if (id===val) {
         return(
             <>
